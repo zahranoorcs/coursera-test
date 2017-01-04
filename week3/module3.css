@@ -11,12 +11,12 @@ body {
 	background-color: grey;	
 }
 
-/*#logo-img {
+#logo-img {
 	background: url('images/sushi_128.png') no-repeat;
 	width: 128px;
 	height: 128px;
 	margin: 10px 15px 10px 20px;
-}*/
+}
 .navbar-brand{
 	padding-top: 35px;
 }
