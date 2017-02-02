@@ -4,10 +4,10 @@ angular.module('myApp',[])
        .controller('LunchCheckController', LunchCheckController);
 
 LunchCheckController.$inject = ['$scope'];
-
+ $scope.message="Hey";
 function LunchCheckController($scope){
          $scope.menu="";
-         $scope.message="Hey";
+
          $scope.lunch_checker = function(){
 
       var data = $scope.menu;
