@@ -43,7 +43,7 @@ separated dishes you usually have for lunch" class="form-control">
 <div class="form-group">
 <button class="btn btn-default" id="check_btn" ng-click="lunch_checker()">Check if too much</button>
 </div>
-<div ng-model="message" class="form-group message">
+<div ng-model="message" ng-cloak ng-show="show_message" class="form-group message">
 {{message}}
 </div>
 

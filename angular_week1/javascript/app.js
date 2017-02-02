@@ -8,7 +8,9 @@ LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope){
          $scope.menu="";
          $scope.message="";
+         $scope.show_message=false;
 $scope.lunch_checker = function(){
+      $scope.show_message = true;
       var data = $scope.menu;
       if(data == ""){
           $scope.message = "Please enter data first";
