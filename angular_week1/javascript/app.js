@@ -1,13 +1,13 @@
 (function(){
 'use strict';
-angular.module('myApp',[])
+angular.module('LunchCheck',[])
        .controller('LunchCheckController', LunchCheckController);
 
 LunchCheckController.$inject = ['$scope'];
-function LunchCheckController($scope){
-         $scope.menu="";
-         $scope.message="Hey";
 
+function LunchCheckController($scope){
+  $scope.message="";
+  $scope.menu="";
          $scope.lunch_checker = function(){
 
       var data = $scope.menu;
@@ -23,7 +23,7 @@ function LunchCheckController($scope){
           $scope.message = "Enjoy";
         }
       }
-};
+}
      }
 
 })();
