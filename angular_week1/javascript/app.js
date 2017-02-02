@@ -7,6 +7,7 @@ LunchCheckController.$inject = ['$scope'];
 
 function LunchCheckController($scope){
          $scope.menu="";
+         $scope.message="";
 $scope.lunch_checker = function(){
       var data = $scope.menu;
       if(data == ""){
