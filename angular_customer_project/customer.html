@@ -2,24 +2,32 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
   <title=""></title>
 </head>
 <script>
-function Customer(){
-  console.log(this);
- this.CustomerName = "laila";
- this.CustomerCode = "1001";
+angular.module("myApp",[])
+.controller("Customerobj",Customer);
+// console.log(this);
+function Customer($scope){
+ $scope.CustomerName = "laila";
+ $scope.CustomerCode = "1001";
 }
 
 
 </script>
-<body>
-  <div id="CustScreen">
-    Customer Name :- <input type="text" id="CustomerName">
-    Customer code :- <input type="text" id="CustomerCode">
-    <div id="divCustomerName"></div>
-    <div id="divCustomerCode"></div>
+<body ng-app="myApp">
+  <div id="CustScreen" ng-controller="Customerobj">
+    Customer Name :- <input type="text" ng-model="CustomerName" id="CustomerName">
+    Customer Code :- <input type="text" ng-model="CustomerCode" id="CustomerCode">
+    <br>
+    {{CustomerName}}<br>
+    {{CustomerCode}}<br>
+    {{1+2}}<br>
+    {{CustomerCode + CustomerName}}
   </div>
+
 
 </body>
 </html>
