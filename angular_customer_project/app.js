@@ -3,4 +3,12 @@
 //with no page reloading, you can use the ngRoute module.
 
 
-angular.module("CrudDemoApp",["CrudDemoApp.controllers","ngRoute"]);
+var app = angular.module("CrudDemoApp",["CrudDemoApp.controllers","ngRoute"]);
+
+ app.config(["$routeProvider",function($routeProvider){
+   $routeProvider
+   .when("/" , {
+     templateUrl:"/partials/PlayerList.html",
+     controller:"MainController"}).
+     otherwise({redirectTo:"/"});
+ }])
