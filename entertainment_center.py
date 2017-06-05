@@ -1,30 +1,51 @@
 import fresh_tomatoes
 import media
-#self argument is ignored because it is by default by python
-toy_story = media.Movie("Toy Story",
-                      "A story of a boy and his toys that come to life",
-                      "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
-                      "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-#print(toy_story.storyline)
-avatar=media.Movie("Avatar",
-                   "A marie on an alien planet",
-                   "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
-                   "https://www.youtube.com/watch?v=cRdxXPV9GNQ")
-#print(avatar.storyline)
-#avatar.show_trailer()
-school_of_rock=media.Movie("School of Rock", "Using rock music to learn",
-                "https://upload.wikimedia.org/wikipedia/en/3/3b/School_of_Rock_%28TV_series%29_poster.jpg",
-                "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
-ratatouille=media.Movie("Ratatouille","A rat is a chef in Paris",
-                        "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
-                        "https://www.youtube.com/watch?v=c3sBBRxDAqk")
-midnight_in_paris=media.Movie("Midnight in Paris","Going back in time to meet authors",
-                              "https://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
-                              "https://www.youtube.com/watch?v=FAfR8omt-CY")
-hunger_games=media.Movie("Hunger Games","A really real reality show",
-                         "https://upload.wikimedia.org/wikipedia/en/4/4b/Hunger_Games_Film_Poster.jpg",
-                         "https://www.youtube.com/watch?v=mfmrPu43DF8")
 
-movies=[toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
+
+#This section is used to initialize the values in the Movie Class in the Media Module for each movie
+
+toy_story = media.Movie("Toy Story",
+                        "A story of a body and his toys that come to life",
+                        "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+                        "https://www.youtube.com/watch?v=vwyZH85NQC4")
+
+
+avatar = media.Movie("Avatar",
+                     "A marine on an alien planet.",
+                     "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
+                     "https://www.youtube.com/watch?v=_Tkc5pQp_JE") 
+
+
+prometheus = media.Movie("Prometheus",
+                             "Following clues to the origin of mankind a team journey across the universe and find a structure on a distant planet containing a monolithic statue of a humanoid head and stone cylinders of alien blood but they soon find they are not alone.",
+                             "http://ewinsidemovies.files.wordpress.com/2011/12/prometheus_810.jpg",
+                             "https://www.youtube.com/watch?v=nmJOO6D5RvA")
+
+
+matrix = media.Movie("Matrix",
+                     "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+                     "https://www.movieposter.com/posters/archive/main/9/A70-4902",
+                     "https://www.youtube.com/watch?v=m8e-FF8MsqU")
+
+
+mad_max_fury_road = media.Movie("Mad Max Fury Road",
+                                "In a stark desert landscape where humanity is broken, two rebels just might be able to restore order: Max, a man of action and of few words, and Furiosa, a woman of action who is looking to make it back to her childhood homeland.",
+                                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSY9szIPbtk1-hwxdEVRJIHT_pgYGNnFkFSWsCjlKFGP3Pu77Oo",
+                                "https://www.youtube.com/watch?v=YWNWi-ZWL3c")
+
+
+whiplash = media.Movie("Whiplash",
+                           "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+                           "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyLORvKKvCi7-vy8vwi2s8F62aG7D36H15A8rOVfP2d7koyA9I",
+                           "https://www.youtube.com/watch?v=tYkuvB2f5XU")
+
+
+#"import fresh_tomatoes" allows to turn this code into a movie website by using function "open_movies_page"  
+#The "open_movies_page" function takes a list or array of movies, then outputs or creates and opens
+#an html webpage or website that shows those movies
+movies = [toy_story, avatar, prometheus, matrix, mad_max_fury_road, whiplash]
 fresh_tomatoes.open_movies_page(movies)
+
+
+
 
